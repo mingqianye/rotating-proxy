@@ -91,6 +91,7 @@ module Service
       super
       self.class.fire_and_forget(executable,
         "--SocksPort #{port}",
+        "--ExitNodes {cn},{tw},{sg},{hk},{us},{ca},{au}",
         "--NewCircuitPeriod 120",
         "--DataDirectory #{data_directory}",
         "--PidFile #{pid_file}",
